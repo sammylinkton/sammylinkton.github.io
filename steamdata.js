@@ -1,6 +1,6 @@
 //This script will grab my steam activity, then show what game im playing under my profile tab
 async function test() {
-    const apiUrl = 'http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=51990F7C324539A6EA20059D74BA68EB&steamids=76561198324195037';
+    const apiUrl = 'https://corsproxy.io/?' + encodeURIComponent('http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=51990F7C324539A6EA20059D74BA68EB&steamids=76561198324195037');
     const debug = document.getElementById('replaceme');
     try {
         const response = await fetch(apiUrl);
